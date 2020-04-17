@@ -37,23 +37,98 @@ header {
 header img {
 	border-radius: 100%;
 	border: 4px solid white;
+	box-shadow: 5px 5px darkgrey;
+	margin-bottom: 4px;
 }
 header h1 {
 	padding: 4px 0;
-	margin: 4px 8px 0 8px;
+	margin: 4px 16px 0 16px;
 	font-size: 35px;
 	background-color: #2F4F4F;
 	border-radius: 8px;
 }
 
 /* Styling the main data */
+main {
+	padding: 0 24px;
+}
 main h2 {
 	font-size: 30px;
 	text-decoration: underline;
 }
 main img {
 	width: 60%;
+	margin-left: 8px;
+	border-radius: 4px;
 }
-main p {
+p.caption {
+	font-size: 15px;
+}
+main p, li {
 	font-size: 20px;
+}
+
+/* Friend list */
+.wrapper {
+	text-align: center;
+}
+.container {
+	display: inline-block;
+	width: 70%;
+}
+/* Images */
+.logo-left {
+	float: left;
+	width: 420px;
+	height: 270px;
+}
+.logo-right {
+	float: right;
+	width: 420px;
+	height: 270px;
+}
+.container li {
+	height: 270px;
+	margin-bottom: 16px;
+}
+/* Text on the sides */
+.text-left {
+	display: inline-block;
+	margin-top: 26px;
+	text-align: left;
+	width: 65%;
+}
+.text-right {
+	display: inline-block;
+	margin-top: 26px;
+	text-align: right;
+	width: 65%;
+}
+
+/* One for all the anchors */
+.container a {
+	color: violet;
+	text-decoration: none;
+}
+.container a:hover {
+	color: slateblue;
+	text-decoration: underline;
+}
+
+/* footer styling */
+footer {
+	background-color: #FF7F50;
+	border-top: 2px solid #87CEEB;
+	padding-bottom: 1px;
+	text-align: center;
+}
+footer a {
+	color: white;
+	background-color: darkslategrey;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+footer a:hover {
+	color: #FF7F50;
+	text-decoration: underline;
 }
