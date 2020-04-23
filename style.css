@@ -162,3 +162,20 @@ header h1 {
 	height: 220px;
 	padding: 16px;
 }
+
+/* Footer Styling */
+footer {
+	background-color: #FF7F50;
+    border-top: 2px solid #87CEEB;
+    padding-bottom: 1px;
+    text-align: center;
+}
+footer a {
+	color: white;
+    background-color: darkslategrey;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
