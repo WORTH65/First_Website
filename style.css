@@ -1,65 +1,86 @@
-/* Adding my own fonts */
+/* Media queries */
+@media screen and (max-width: 1170px) {
+	main {
+		margin-left: 16px !important;
+		margin-right: 16px !important;
+	}
+}
+@media screen and (max-width: 1020px) {
+	.side-by-side, .side-small {
+		display: block !important;
+	}
+	.side-big {
+		display: none !important;
+	}
+	.img-left {
+		max-width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.logo-left {
+		float: none !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.text-left {
+		padding: 16px 40px !important;
+	}
+}
+@media screen and (max-width: 440px) {
+	header img {
+		width: 290px !important;
+	}
+	header {
+		max-height: 365px !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	header img {
+		width: 200px !important;
+	}
+	header {
+		max-height: 280px !important;
+	}
+	header h1 {
+		font-size: 25px !important;
+	}
+}
+
+/* Font Family */
 @font-face {
-	font-family: crusade;
-	src: url("fonts/RaiderCrusaderLaser-yz55.otf");
+  font-family: crusade;
+  src: url(fonts/RaiderCrusaderLaser-yz55.otf);
 }
 @font-face {
 	font-family: logo;
-	src: url(fonts/HallOfHeroes-BErn.ttf);
+	src: url("fonts/HallOfHeroes-BErn.ttf");
 }
 @font-face {
 	font-family: main;
 	src: ("fonts/HelveticaNowDisplayXBlk.otf");
 }
 
-/* Basic styling for wntire page */
-body, html {
-	height: 100%;
+/* Entire page */
+body {
 	margin: 0;
 	padding: 0;
-	color: white;
 	background-color: black;
 	font-family: main, sans-serif;
+	color: white;
 }
-
-/* Header styling */
-header {
-	height: 480px;
-	width: 100%;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-	background-color: #2B3784;
-	background-image: url("img/head-back.png");
-	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 16px;
+.main-container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
 }
-header img {
-	border-radius: 100%;
-	border: 4px solid white;
-	box-shadow: 5px 5px darkgrey;
-	margin-bottom: 4px;
-}
-header h1 {
-	padding: 4px 0;
-	margin: 4px 16px 0 16px;
-	font-size: 35px;
-	background-color: #2F4F4F;
-	border-radius: 8px;
-}
-
-/* Styling the main data */
-main {
-	padding: 0 40px;
-}
-main h2 {
-	font-size: 30px;
+.main-container h2 {
 	text-decoration: underline;
+	font-size: 30px;
 }
-main img {
-	width: 60%;
-	margin-left: 8px;
-	border-radius: 4px;
+.main-img {
+	width: 80%;
+    margin-left: 8px;
+    border-radius: 4px;
 }
 p.caption {
 	font-size: 15px;
@@ -67,68 +88,77 @@ p.caption {
 main p, li {
 	font-size: 20px;
 }
-
-/* Friend list */
-.wrapper {
-	text-align: center;
+a {
+	text-decoration: none;
 }
+
+/* header Styling */
+header {
+	height: 480px;
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #2B3784;
+    background-image: url(img/head-back.png);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+header img {
+	border-radius: 100%;
+	border: 4px solid white;
+	width: 400px;
+}
+header h1 {
+	padding: 4px 0;
+    margin: 4px 16px 0 16px;
+    font-size: 35px;
+    background-color: #2F4F4F;
+    border-radius: 8px;
+}
+/* Inter-dimensional friends section */
 .container {
-	display: inline-block;
-	width: 70%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
-/* Images */
-.logo-left {
-	float: left;
-	width: 420px;
-	height: 270px;
-}
-.logo-right {
-	float: right;
-	width: 420px;
-	height: 270px;
-}
-.container li {
-	height: 270px;
-	margin-bottom: 16px;
-}
-/* Text on the sides */
-.text-left {
-	display: inline-block;
-	margin-top: 26px;
-	text-align: left;
-	width: 65%;
-}
-.text-right {
-	display: inline-block;
-	margin-top: 26px;
-	text-align: right;
-	width: 65%;
+.container ul li {
+	font-size: 17px;
 }
 
-/* One for all the anchors */
+/* Styling for the links */
 .container a {
 	color: violet;
-	text-decoration: none;
 }
 .container a:hover {
 	color: slateblue;
 	text-decoration: underline;
 }
 
-/* footer styling */
-footer {
-	background-color: #FF7F50;
-	border-top: 2px solid #87CEEB;
-	padding-bottom: 1px;
-	text-align: center;
+/* Actual div styling for the inter-dimensional part */
+.side-by-side, .side-big {
+	display: flex;
 }
-footer a {
-	color: white;
-	background-color: darkslategrey;
-	padding: 4px 8px;
-	border-radius: 4px;
+.side-small {
+	display: none;
 }
-footer a:hover {
-	color: #FF7F50;
-	text-decoration: underline;
+.logo-left {
+    float: left;
+    width: 340px;
+    height: 220px;
+}
+.logo-right {
+	float: right;
+    width: 340px;
+    height: 220px;
+}
+.text-left {
+    text-align: left;
+    height: 220px;
+    padding: 16px;
+}
+.text-right {
+	text-align: right;
+	height: 220px;
+	padding: 16px;
 }
