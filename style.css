@@ -1,4 +1,4 @@
-/* Media queries */
+/* Media queries for responsive */
 @media screen and (max-width: 1170px) {
 	main {
 		margin-left: 16px !important;
@@ -46,7 +46,7 @@
 	}
 }
 
-/* Font Family */
+/* Custom Font Families */
 @font-face {
   font-family: crusade;
   src: url(fonts/RaiderCrusaderLaser-yz55.otf);
@@ -60,7 +60,7 @@
 	src: ("fonts/HelveticaNowDisplayXBlk.otf");
 }
 
-/* Entire page */
+/* Entire page Styling */
 body {
 	margin: 0;
 	padding: 0;
@@ -116,7 +116,7 @@ header h1 {
     background-color: #2F4F4F;
     border-radius: 8px;
 }
-/* Inter-dimensional friends section */
+/* Inter-dimensional friends section (Head-ache) */
 .container {
 	max-width: 100%;
 	margin-left: auto;
