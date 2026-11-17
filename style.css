@@ -120,6 +120,11 @@ header h1 {
     background-color: #2F4F4F;
     border-radius: 8px;
 }
+
+.main-container h2 {
+	color: red;
+}
+
 /* Inter-dimensional friends section */
 .container {
 	max-width: 100%;
