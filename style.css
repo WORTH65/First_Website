@@ -103,6 +103,10 @@ header {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 16px;
+
+	/* New Line added */
+	display: none;
+	/* Only one */
 }
 header img {
 	border-radius: 100%;
